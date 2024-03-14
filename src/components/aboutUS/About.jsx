@@ -16,7 +16,7 @@ function About() {
           <h2 className="text-orange-600 text-5xl font-bold pt-2">
             & Programmer
           </h2>
-          <p className="text-orange-600 text-l pt-5 pr-3 w-full mb-10">
+          <p className="text-orange-600 font-semibold text-l pt-5 pr-3 w-full mb-10">
             Hello, Welcome to my profile, My name is Arjun Negi from Almora. I
             have done my entire Schooling from Uttarakhand, India. I have done
             my Diploma in "Information Technology" from Government Polytechnic
@@ -36,7 +36,10 @@ function About() {
           </Link>
         </div>
         <div className="box">
-          <img src="./personal/mypic.jpg" className="rounded-full" />
+          <img
+            src="./personal/mypic.jpg"
+            className="rounded-full border-solid border-4 border-orange-500 w-96 h-96"
+          />
         </div>
       </div>
     </section>

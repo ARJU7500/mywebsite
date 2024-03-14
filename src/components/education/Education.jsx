@@ -6,14 +6,14 @@ function Education() {
       <h1 className="text-center mt-10 text-orange-600 text-5xl font-bold ">
         Education
       </h1>
-      <p className="text-center mt-2 text-orange-600 text-mid ">
+      <p className=" font-semibold text-center mt-2 text-orange-600 text-mid ">
         My education has been a journey of self-discovery and growth. My
         educational details are as follows.
       </p>
       <div className=" flex flex-wrap justify-between items-center mx-auto max-w-screen-xl my-10">
         <div className="w-1/2 border-solid border-2 shadow-lg rounded-md p-2">
           <div className="flex bg-gray-300 rounded-md">
-            <div className="1/4">
+            <div>
               <img src="./education/itg.png" className="w-28" />
             </div>
             <div className="3/4">
@@ -84,7 +84,7 @@ function Education() {
           </div>
           <div>
             <p className="text-orange-600 font-semibold ">
-              I have done my high school from Government Inter College Jalali,
+              I have done my Intermediate from Government Inter College Jalali,
               Almora, Uttarakhand, India. with 60.80%.
             </p>
           </div>
