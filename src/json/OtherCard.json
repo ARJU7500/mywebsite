@@ -1,32 +1,32 @@
 [
     {
-        "id":"1",
-        "icon":"./icon/react.png",
-        "name":"Git"
+        "id": "1",
+        "icon": "./icon/git.png",
+        "name": "Git"
     },
     {
-        "id":"2",
-        "icon":"./icon/js.png",
-        "name":"Github"
+        "id": "2",
+        "icon": "./icon/github.png",
+        "name": "Github"
     },
     {
-        "id":"3",
-        "icon":"./icon/css.png",
-        "name":"VSCode"
+        "id": "3",
+        "icon": "./icon/vsd.png",
+        "name": "VSCode"
     },
     {
-        "id":"4",
-        "icon":"./icon/html.png",
-        "name":"Docker"
+        "id": "4",
+        "icon": "./icon/docker.png",
+        "name": "Docker"
     },
     {
-        "id":"5",
-        "icon":"./icon/c.png",
-        "name":"AWS"
+        "id": "5",
+        "icon": "./icon/aws.png",
+        "name": "AWS"
     },
     {
-        "id":"6",
-        "icon":"./icon/cpp.png",
-        "name":"Sublime "
+        "id": "6",
+        "icon": "./icon/slte.png",
+        "name": "Sublime "
     }
 ]

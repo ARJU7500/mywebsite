@@ -23,10 +23,10 @@ function About() {
             Dwarahat, Almora. Currently I am pursuing B.Tech. in "Computer
             Science & Engineering" from Institute of Technology Gopeshwar,
             Chamoli where I am currently in my final year. Currently i am intern
-            at "CompWallha" (Software Development). Apart from studies, I like
-            to travel alone/with friends, learn about new things, and I always
-            like to do/learn something new and share what I have learned with
-            friends.
+            at "CompWallha" (Software Development). Apart from studies/you can
+            say my hobby, I like to travel alone/with friends, learn about new
+            things, and I always like to do/learn something new and share what I
+            have learned with friends.
           </p>
           <Link
             to="#"

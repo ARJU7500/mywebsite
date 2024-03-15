@@ -1,23 +1,22 @@
 [
     {
-        "id":"1",
-        "icon":"./icon/react.png",
-        "name":"C"
+        "id": "1",
+        "icon": "./icon/c.png",
+        "name": "C"
     },
     {
-        "id":"2",
-        "icon":"./icon/js.png",
-        "name":"C++"
+        "id": "2",
+        "icon": "./icon/cpp.png",
+        "name": "C++"
     },
     {
-        "id":"3",
-        "icon":"./icon/css.png",
-        "name":"Java"
+        "id": "3",
+        "icon": "./icon/java.png",
+        "name": "Java"
     },
     {
-        "id":"4",
-        "icon":"./icon/html.png",
-        "name":"C#"
+        "id": "4",
+        "icon": "./icon/cs.png",
+        "name": "C#"
     }
-
 ]

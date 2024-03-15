@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "image": "./education/itg.png",
+        "collegeName": "Institue of technology Gopeshwar, Chamoli",
+        "courseName": " Bachelor of Technology, Computer Science & Engineering",
+        "batch": "Oct 2021 - June 2024",
+        "para": "I am currently pursuing a Bachelor's degree in computer science & engineering at Veer Madho Singh Bhandari Campus Institue Of Technology Gopeshwar, Chamoli, Uttarakhand, India. I have completed 7th semsters and i have a percentage of 60%."
+    },
+    {
+        "id": 2,
+        "image": "./education/polly.png",
+        "collegeName": "Government Polytechnic Dwarahat, Almora",
+        "courseName": " Diploma, Information Technology",
+        "batch": "Aug 2018 - Oct 2021",
+        "para": "I have done my diploma in information technology from Government polytechnic Dwarahat, Almora, Uttarakhand, India  with 74.90%."
+    },
+    {
+        "id": 3,
+        "image": "./education/school.png",
+        "collegeName": "Government Inter College Jalali, Almora",
+        "courseName": " Intermediate, Science Stream",
+        "batch": "April 2017 - May 2018",
+        "para": "I have done my Intermediate from Government Inter Collge Jalali, Almora, Uttarakhand, India with 60.80%."
+    },
+    {
+        "id": 4,
+        "image": "./education/school.png",
+        "collegeName": "Government Inter College Jalali, Almora",
+        "courseName": " High School, General",
+        "batch": "April 2015- May 2016",
+        "para": "I have done my done my High School from Government Inter College Jalali, Almora, Uttarakhand, India. with 61.40%."
+    }
+]

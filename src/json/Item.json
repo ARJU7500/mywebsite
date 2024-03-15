@@ -1,33 +1,32 @@
 [
     {
-        "id":"1",
-        "icon":"./icon/react.png",
-        "name":"ReactJs"
+        "id": "1",
+        "icon": "./icon/react.png",
+        "name": "ReactJs"
     },
     {
-        "id":"2",
-        "icon":"./icon/js.png",
-        "name":"javaScript"
+        "id": "2",
+        "icon": "./icon/js.png",
+        "name": "javaScript"
     },
     {
-        "id":"3",
-        "icon":"./icon/css.png",
-        "name":"CSS3"
+        "id": "3",
+        "icon": "./icon/css.png",
+        "name": "CSS3"
     },
     {
-        "id":"4",
-        "icon":"./icon/html.png",
-        "name":"HTML5"
+        "id": "4",
+        "icon": "./icon/html.png",
+        "name": "HTML5"
     },
     {
-        "id":"5",
-        "icon":"./icon/c.png",
-        "name":"Bootstrap"
+        "id": "5",
+        "icon": "./icon/boot.png",
+        "name": "Bootstrap"
     },
     {
-        "id":"6",
-        "icon":"./icon/cpp.png",
-        "name":"Next.js"
+        "id": "6",
+        "icon": "./icon/next.png",
+        "name": "Next.js"
     }
-
 ]
