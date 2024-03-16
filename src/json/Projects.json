@@ -1,26 +1,29 @@
 [
     {
-        "Id": 1,
-        "Project Name": "College Website",
-        "Code link": "https://github.com/ARJU7500/project-in-college-website",
-        "completed year": 2021,
-        "Tools/Technology": "HTML, CSS, javaScript,Bootstarp(Freamework), PHP(BAckend), MYSQL(Database)",
-        "About": "This is Diploma Major project. which is created for college(Government Polytechnic Dwarahat, Almora). where we display the full information about the colleges and also include hostel and library management systems."
+        "id": 1,
+        "name": "College Website",
+        "image": "./project/game.png",
+        "link": "https://github.com/ARJU7500/project-in-college-website",
+        "year": 2021,
+        "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), PHP (BAckend), MYSQL (Database)",
+        "about": "This is Diploma Major project. which is created for college(Government Polytechnic Dwarahat, Almora). where we display the full information about the colleges and also include hostel and library management systems."
     },
     {
-        "Id": 2,
-        "Project Name": "Read Store",
-        "Code link": "https://github.com/ARJU7500/EcomerceWebsiteReactJs",
-        "Completed year": 2022,
-        "Tools/Technology": "HTML, CSS, javaScript,Bootstarp(Freamework),ReactJs(Library)",
-        "About": "this is E-commerce website."
+        "id": 2,
+        "name": "Read Store",
+        "image": "./project/game.png",
+        "link": "https://github.com/ARJU7500/EcomerceWebsiteReactJs",
+        "year": 2022,
+        "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), ReactJs (Library)",
+        "about": "this is E-commerce website."
     },
     {
-        "Id": 3,
-        "Project Name": "Game Website",
-        "Code link": "https://github.com/ARJU7500/mygame",
-        "Completed year": 2021,
-        "Tools/Technology": "HTML, CSS, javaScript",
-        "About": "this is gaming website."
+        "id": 3,
+        "image": "./project/game.png",
+        "name": "Game Website",
+        "link": "https://github.com/ARJU7500/mygame",
+        "year": 2021,
+        "technology": "HTML, CSS, javaScript",
+        "about": "this is gaming website."
     }
 ]

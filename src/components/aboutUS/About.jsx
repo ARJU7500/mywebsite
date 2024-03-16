@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <section className=" myIntro bg-gray-200 py-10">
-      <div className="about flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <div className="box w-2/3">
+    <section className=" bg-gray-200 py-10 h-[90vh]">
+      <div className="flex flex-wrap justify-between mx-auto max-w-screen-xl pt-20">
+        <div className="w-2/3">
           <h1 className="text-orange-600 text-5xl font-bold ">Hii,</h1>
           <h1 className="text-orange-600 text-5xl font-bold ">
             I'm Arjun Negi
@@ -16,7 +16,7 @@ function About() {
           <h2 className="text-orange-600 text-5xl font-bold pt-2">
             & Programmer
           </h2>
-          <p className="text-orange-600 font-semibold text-l pt-5 pr-3 w-full mb-10">
+          <p className="text-orange-600 font-semibold pt-2 mb-10 w-[100%]">
             Hello, Welcome to my profile, My name is Arjun Negi from Almora. I
             have done my entire Schooling from Uttarakhand, India. I have done
             my Diploma in "Information Technology" from Government Polytechnic
@@ -29,13 +29,14 @@ function About() {
             have learned with friends.
           </p>
           <Link
-            to="#"
+            to="../../../public/resume/asncollege.pdf"
+            target="_blank"
             className="text-orange-600 border-solid border-2 border-orange-600 hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none mt-40"
           >
             Check Resume
           </Link>
         </div>
-        <div className="box">
+        <div className="w-1/3">
           <img
             src="./personal/mypic.jpg"
             className="rounded-full border-solid border-4 border-orange-500 w-96 h-96"

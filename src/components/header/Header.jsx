@@ -2,12 +2,12 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const navItems = [
-    { id: 1, text: "ABOUT_ME", link: "/" },
-    { id: 2, text: "EDUCATION", link: "/education" },
-    { id: 3, text: "SKILLS", link: "/skills" },
-    { id: 4, text: "PROJECTS", link: "/projects" },
-    { id: 5, text: "INTERNSHIP", link: "/internship" },
-    { id: 6, text: "CONTACT_ME", link: "/contact" },
+    { id: 1, text: "ABOUT_ME", link: "#" },
+    { id: 2, text: "EDUCATION", link: "#education" },
+    { id: 3, text: "SKILLS", link: "#skills" },
+    { id: 4, text: "PROJECTS", link: "#projects" },
+    { id: 5, text: "INTERNSHIP", link: "#internship" },
+    { id: 6, text: "CONTACT_ME", link: "#contact" },
   ];
   return (
     <>
@@ -45,9 +45,9 @@ const Header = () => {
                     <NavLink
                       to={items.link}
                       className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${
-                          isActive ? "text-black-600 " : "text-orange-600"
-                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 hover:underline decoration-solid lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200
+                        ${isActive ? "text-black-600 " : "text-orange-600"}
+                        border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 hover:underline decoration-solid lg:p-0`
                       }
                     >
                       {items.text}
