@@ -63,17 +63,20 @@ const Header = () => {
           </button>
         </div>
       </nav>
-      <div className={isMenuOpen ? "block" : "hidden"} id="responsive">
-        <ul className="bg-orange-600 h-[670px]">
+      <div id="responsive" className={isMenuOpen ? "block" : "hidden"}>
+        <ul className="bg-orange-600 h-[670px] py-2 text-center">
           {navItems.map((item) => (
-            <li key={item.id}>
-              <a
-                href={item.link}
-                className="py-2 pr-4 pl-3 duration-200 font-bold cursor-pointer text-white border-b-2 border-b-white flex flex-col justify-center"
-              >
-                {item.text}
-              </a>
-            </li>
+            <>
+              <button key={item.id} onClick={toggleMenu} className="border-0 ">
+                <a
+                  href={item.link}
+                  className=" p-3 font-bold cursor-pointer text-white flex flex-col"
+                >
+                  {item.text}
+                </a>
+              </button>
+              <hr className="h-0.5 bg-white" />
+            </>
           ))}
         </ul>
       </div>
