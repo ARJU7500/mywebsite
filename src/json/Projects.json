@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "College Website",
-        "image": "../../public/project/collegeWeb.png",
+        "image": "./project/collegeWeb.png",
         "link": "https://github.com/ARJU7500/project-in-college-website",
         "year": 2021,
         "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), PHP (BAckend), MYSQL (Database)",
