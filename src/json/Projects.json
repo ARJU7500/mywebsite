@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "College Website",
-        "image": "./project/game.png",
+        "image": "../../public/project/collegeWeb.png",
         "link": "https://github.com/ARJU7500/project-in-college-website",
         "year": 2021,
         "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), PHP (BAckend), MYSQL (Database)",
@@ -11,11 +11,12 @@
     {
         "id": 2,
         "name": "Read Store",
-        "image": "./project/game.png",
+        "image": "./project/ec.png",
         "link": "https://github.com/ARJU7500/EcomerceWebsiteReactJs",
         "year": 2022,
         "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), ReactJs (Library)",
-        "about": "this is E-commerce website."
+        "about": "this is E-commerce website.",
+        "demoLink": "https://arju7500.github.io/E-commerce_Website/"
     },
     {
         "id": 3,
@@ -24,6 +25,7 @@
         "link": "https://github.com/ARJU7500/mygame",
         "year": 2021,
         "technology": "HTML, CSS, javaScript",
-        "about": "this is gaming website."
+        "about": "this is gaming website.",
+        "demoLink": "https://arju7500.github.io/mygame/"
     }
 ]
