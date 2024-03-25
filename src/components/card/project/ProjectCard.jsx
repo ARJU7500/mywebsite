@@ -6,7 +6,7 @@ function ProjectCard() {
   return (
     <>
       {projects.map((items, index) => (
-        <div className="border-solid border-2 border-orange-600 justify-between items-center w-96 shadow-lg rounded-lg">
+        <div className="border-solid border-2 border-orange-600 justify-between items-center w-96 shadow-lg rounded-lg md:w-[600px] lg:w-[400px]">
           <ProjectCardList
             key={items.id}
             image={items.image}

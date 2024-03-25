@@ -6,7 +6,7 @@ function InternCard() {
   return (
     <>
       {Intern.map((items, index) => (
-        <div className="border-solid border-2 border-orange-600 justify-between items-center w-96 shadow-lg rounded-lg">
+        <div className="border-solid border-2 border-orange-600 justify-between items-center w-96 shadow-lg rounded-lg md:w-[600px]">
           <InternCardList
             key={items.Id}
             image={items.image}
