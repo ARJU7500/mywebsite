@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className=" bg-gray-200 flex flex-col-reverse px-4 min-h-[95vh] justify-center items-center py-5 md:pt-[30px] md:min-w-[70vh] lg:flex-row lg:justify-between lg:items-start lg:pt-20 lg:px-10 ">
+    <div
+      id="about"
+      className=" bg-gray-200 flex flex-col-reverse px-4 min-h-[95vh] justify-center items-center py-5 md:pt-[30px] md:min-w-[70vh] lg:flex-row lg:justify-between lg:items-start lg:pt-20 lg:px-10 "
+    >
       <div className="flex flex-col items-center justify-center md:flex md:flex-col md:justify-start lg:flex-col lg:justify-start lg:items-start lg:w-[65%]">
         <h1 className="text-orange-600 mt-6 text-[25px] font-bold md:text-5xl">
           Hii,
