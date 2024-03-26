@@ -15,9 +15,9 @@ function Education() {
         <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
           <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
             <div>
-              <img src="./education/itg.png" className="w-[150px]" />
+              <img src="./education/itg.png" className="w-[80px]" />
             </div>
-            <div className="">
+            <div className="md:ml-10">
               <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl">
                 Institute of technology Gopeshwar, Chamoli
               </h4>
@@ -52,9 +52,9 @@ function Education() {
         <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
           <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
             <div>
-              <img src="./education/polly.png" className="w-[150px]" />
+              <img src="./education/polly.png" className="w-[90px]" />
             </div>
-            <div className="md:ml-5 lg:pl-5">
+            <div className="md:ml-5">
               <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl">
                 Government Polytechnic Dwarahat, Almora
               </h4>
@@ -79,9 +79,9 @@ function Education() {
         <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
           <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
             <div>
-              <img src="./education/school.png" className="w-[150px]" />
+              <img src="./education/school.png" className="w-[90px]" />
             </div>
-            <div className="  md:ml-10 lg:pl-5">
+            <div className="md:ml-10">
               <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl md:flex md:justify-start">
                 Government Inter college Jalali, Almora
               </h4>
@@ -114,9 +114,9 @@ function Education() {
         <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
           <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
             <div>
-              <img src="./education/school.png" className="w-[150px]" />
+              <img src="./education/school.png" className="w-[90px]" />
             </div>
-            <div className=" md ml-10 lg:pl-5">
+            <div className="md:ml-10">
               <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl">
                 Government Inter college Jalali, Almora
               </h4>

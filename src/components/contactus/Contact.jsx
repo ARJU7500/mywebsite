@@ -86,25 +86,27 @@ function Contact() {
           <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:flex md:flex-col  md:justify-center md:items-center">
             <img src="./contact/git.png" className="md:w-[80%] lg:w-[80%]" />
             <div className="p-5">
-              <h5 className="mb-2 text-3xl font-bold tracking-tight text-orange-600 dark:text-white md:text-5xl">
-                Get In Touch:
-              </h5>
-              <p className="mb-3  text-orange-600 md:text-2xl ">
-                Fill the form to start a Conversation
-              </p>
-              <p className="mb-3 text-orange-600  md:text-2xl">
-                Chamoli, Uttarakhand, India
-              </p>
-              <p className="mb-3  text-orange-600 md:text-2xl">
-                Email: an096237@gmail.com
-              </p>
-              <p className="mb-3  text-orange-600 md:text-2xl">
-                mobile Number : +917668213002
-              </p>
-              <p className="mb-3 text-orange-600 md:text-2xl">
-                Whatsapp Number : +917668213002
-              </p>
-              <div className="flex justify-between md:mt-10">
+              <div className="flex flex-col justify-center items-center ">
+                <h5 className="mb-2 text-3xl font-bold tracking-tight text-orange-600 dark:text-white md:text-5xl">
+                  Get In Touch:
+                </h5>
+                <p className="mb-3  text-orange-600 md:text-2xl ">
+                  Fill the form to start a Conversation
+                </p>
+                <p className="mb-3 text-orange-600  md:text-2xl">
+                  Chamoli, Uttarakhand, India
+                </p>
+                <p className="mb-3  text-orange-600 md:text-2xl">
+                  Email: an096237@gmail.com
+                </p>
+                <p className="mb-3  text-orange-600 md:text-2xl">
+                  mobile Number : +917668213002
+                </p>
+                <p className="mb-3 text-orange-600 md:text-2xl">
+                  Whatsapp Number : +917668213002
+                </p>
+              </div>
+              <div className="flex justify-between md:flex md:justify-between md:mt-10 lg:flex lg:justify-between">
                 <Link
                   target="_blank"
                   to="https://www.linkedin.com/in/arjun-negi-a28ba61b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwlpSw0GhTUSz3HdPWM0m0Q%3D%3D"
@@ -112,7 +114,7 @@ function Contact() {
                   <img src="./contact/ld.png" />
                 </Link>
                 <Link to="https://github.com/ARJU7500" target="_blank">
-                  <img src="./contact/github.png" />
+                  <img src="./contact/gitghub.png" />
                 </Link>
                 <Link to="">
                   <img src="./contact/tw.png" />
