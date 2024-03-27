@@ -47,7 +47,7 @@ const Header = () => {
             Github
           </Link>
           <Link
-            to="https://www.linkedin.com/in/arjun-negi-a28ba61b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwlpSw0GhTUSz3HdPWM0m0Q%3D%3D"
+            to="https://www.linkedin.com/in/arjunegi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BysJqComQTvWxniErp%2FeC1w%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white bg-orange-600 hover:bg-white hover:text-orange-600 hover: border-solid border-2 border-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
