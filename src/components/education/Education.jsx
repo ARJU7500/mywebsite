@@ -31,10 +31,9 @@ function Education() {
           </div>
           <div>
             <p className="text-orange-600 p-2 md:text-xl">
-              I am currently pursuing a Bachelor's degree in Computer Science &
+              I am currently graduate a Bachelor's degree in Computer Science &
               Engineering at Veer Madho Singh Bhandari Campus Institute of
-              Technology Gopeshwar, Chamoli, Uttarakhand, India. I have
-              completed 7 semesters and have a percentage of 60%.
+              Technology Gopeshwar, Chamoli, Uttarakhand, India.
             </p>
           </div>
         </div>
@@ -69,7 +68,7 @@ function Education() {
           <div>
             <p className="text-orange-600 p-2 md:text-xl">
               I have done my Diploma in Information Technology from Government
-              Polytechnic Dwarahat, Almora, Uttarakhand, India with 74.90%.
+              Polytechnic Dwarahat, Almora, Uttarakhand, India.
             </p>
           </div>
         </div>
@@ -96,7 +95,7 @@ function Education() {
           <div>
             <p className="text-orange-600 p-2 md:text-xl">
               I have done my Intermediate from Government Inter College Jalali,
-              Almora, Uttarakhand, India. with 60.80%.
+              Almora, Uttarakhand, India.
             </p>
           </div>
         </div>
@@ -131,7 +130,7 @@ function Education() {
           <div>
             <p className="text-orange-600 p-2 md:text-xl">
               I have done my high school from Government Inter College Jalali,
-              Almora, Uttarakhand, India. with 61.40%.
+              Almora, Uttarakhand, India.
             </p>
           </div>
         </div>

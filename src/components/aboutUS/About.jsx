@@ -24,16 +24,15 @@ function About() {
           Hello, Welcome to my profile, My name is Arjun Negi from Almora. I
           have done my entire Schooling from Uttarakhand, India. I have done my
           Diploma in "Information Technology" from Government Polytechnic
-          Dwarahat, Almora. Currently I am pursuing B.Tech. in "Computer Science
-          & Engineering" from Institute of Technology Gopeshwar, Chamoli where I
-          am currently in my final year. Currently i am intern at "CompWallha"
+          Dwarahat, Almora. Currently I am graduate in B.Tech. in "Computer Science
+          & Engineering" from Institute of Technology Gopeshwar, Chamoli. i have completed internship at "CompWallha"
           (Software Development) as a "Web developer and designer". Apart from
           studies/you can say my hobby, I like to travel alone/with friends,
           learn about new things, and I always like to do/learn something new
           and share what I have learned with friends.
         </p>
         <Link
-          to="https://drive.google.com/file/d/1k-13WeErMlzQa1bREbo69NcQCK3VsJZZ/view?usp=sharing"
+          to="https://drive.google.com/drive/folders/17y2Pa-Tb5ce8leIYUVOt1RPvppjTt0lU?usp=sharing"
           target="_blank"
           className="text-orange-600 border-solid border-2 border-orange-600 hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none mt-2 md:text-xl"
         >
