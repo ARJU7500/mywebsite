@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Contact() {
+  const [contact, setContact]=useState({
+    name:"",
+    email:"",
+    subject:"",
+    message:""
+  });
+  const handlerInputChange=(e)=>
+  {
+      const {name,value}=e.target;
+      setContact((prev)=>({...prev,[name]:value}));
+  }
+  const handelSubmitData=(e)=>
+  {
+    e.preventDefault();
+  }
   return (
     <section className="px-2 lg:px-10" id="contact">
       <h1 className="text-center mt-10 text-orange-600 text-5xl font-bold md:text-6xl ">
@@ -13,7 +28,7 @@ function Contact() {
       <div className=" flex flex-col-reverse justify-between px-4 gap-4 mt-10 lg:flex lg:flex-row lg:justify-between">
         <div className="flex p-2 shadow-md md:p-2 lg:w-[50%]">
           <div className=" w-[100%] md:w-[100%]">
-            <form>
+            <form onSubmit={handelSubmitData}>
               <div className="mb-5">
                 <label
                   for="name"
@@ -26,7 +41,7 @@ function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[orange] focus:shadow-md"
+                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[orange] focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
                 />
               </div>
               <div className="mb-5">
@@ -41,7 +56,7 @@ function Contact() {
                   name="email"
                   id="email"
                   placeholder="example@domain.com"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md"
+                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
                 />
               </div>
               <div className="mb-5">
@@ -56,7 +71,7 @@ function Contact() {
                   name="subject"
                   id="subject"
                   placeholder="Enter your subject"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md"
+                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
                 />
               </div>
               <div className="mb-5">
@@ -71,7 +86,7 @@ function Contact() {
                   name="message"
                   id="message"
                   placeholder="Type your message"
-                  className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md"
+                  className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
                 ></textarea>
               </div>
               <div className=" flex justify-center items-center md:flex md:justify-center md:items-center">
@@ -94,7 +109,7 @@ function Contact() {
                   Fill the form to start a Conversation
                 </p>
                 <p className="mb-3 text-orange-600  md:text-2xl">
-                  Chamoli, Uttarakhand, India
+                  Almora, Uttarakhand, India
                 </p>
                 <p className="mb-3  text-orange-600 md:text-2xl">
                   Email: an096237@gmail.com
