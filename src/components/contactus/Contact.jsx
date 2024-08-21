@@ -16,6 +16,7 @@ function Contact() {
   const handelSubmitData=(e)=>
   {
     e.preventDefault();
+    console.log(contact);
   }
   return (
     <section className="px-2 lg:px-10" id="contact">
