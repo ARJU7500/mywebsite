@@ -8,5 +8,15 @@
         "title": "Web Developer And Designer",
         "description": "CompWallha is a Software Development company where we develope different type projects.I am work as a intern at this company and good exprience with compwallha.",
         "skills": "HTML, CSS, javaScript, ReactJs and TailWind CSS."
+    },
+    {
+        "Id": 2,
+        "image": "./job/elogisol.png",
+        "name": "Team Elogisol Private Limited",
+        "work": "Software Development",
+        "date": "14 Oct 2024 - Current",
+        "title": "Software Engineer",
+        "description": "TEAM ELOGISOL Private Limited is a professionally managed IT product and IT enabled services Provider Company focused on the Logistics domain. I Joined as a Software Developer.",
+        "skills": "Dot Net Frameworks and SQL."
     }
 ]
