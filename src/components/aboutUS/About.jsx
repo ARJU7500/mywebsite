@@ -15,21 +15,17 @@ function About() {
           I'm Arjun Negi
         </h1>
         <h2 className="text-orange-600  text-[25px] font-bold pt-2 md:text-5xl">
-          I'm a Web Developer
+          I'm a Software Developer
         </h2>
-        <h2 className="text-orange-600 text-[25px] font-bold pt-2 md:text-5xl">
-          & Programmer
-        </h2>
-        <p className="text-orange-600 text-[13px] md:text-[15px] pt-2 mb-2 w-[100%] md:text-xl md:pt-4 md:px-3 md:leading-8 lg:px-0 lg:py-4">
-          Hello, Welcome to my profile, My name is Arjun Negi from Almora. I
-          have done my entire Schooling from Uttarakhand, India. I have done my
-          Diploma in "Information Technology" from Government Polytechnic
-          Dwarahat, Almora. Currently I am graduate in B.Tech. in "Computer Science
-          & Engineering" from Institute of Technology Gopeshwar, Chamoli. i have completed internship at "CompWallha"
-          (Software Development) as a "Web developer and designer". Apart from
-          studies/you can say my hobby, I like to travel alone/with friends,
-          learn about new things, and I always like to do/learn something new
-          and share what I have learned with friends.
+        <p className="text-orange-600 text-[13px] md:text-[15px] pt-2 w-[100%] md:text-xl md:pt-4 md:px-3 md:leading-8 lg:px-0 lg:mt-4">
+          Hello, Welcome to my profile!
+          </p>
+          <p className="text-orange-600 text-[13px] md:text-[15px] mb-2 w-[100%] md:text-xl md:px-3 md:leading-8 lg:px-0">
+           I’m from Uttarakhand and have completed all my education there.
+          Currently, I live in Delhi. I’ve been working as a software developer for the past 9 months at Team Elogisol Pvt. Ltd..
+          My specialization is in backend development and database management.
+          Apart from my professional work, I enjoy traveling—either solo or with friends. I love learning new things and
+          always try to do or explore something different. I also enjoy sharing my knowledge and experiences with others.
         </p>
         <Link
           to="https://drive.google.com/drive/folders/17y2Pa-Tb5ce8leIYUVOt1RPvppjTt0lU?usp=sharing"

@@ -38,7 +38,7 @@ function Contact() {
                   Full Name
                 </label>
                 <input
-                  type="text"
+                  type="text" disabled
                   name="name"
                   id="name"
                   placeholder="Full Name"
@@ -53,7 +53,7 @@ function Contact() {
                   Email Address
                 </label>
                 <input
-                  type="email"
+                  type="email" disabled
                   name="email"
                   id="email"
                   placeholder="example@domain.com"
@@ -68,7 +68,7 @@ function Contact() {
                   Subject
                 </label>
                 <input
-                  type="text"
+                  type="text" disabled
                   name="subject"
                   id="subject"
                   placeholder="Enter your subject"
@@ -83,10 +83,10 @@ function Contact() {
                   Message
                 </label>
                 <textarea
-                  rows="4"
+                  rows="4" disabled
                   name="message"
                   id="message"
-                  placeholder="Type your message"
+                  placeholder="Type your message(Connect through Email or Whatsapp)"
                   className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
                 ></textarea>
               </div>
@@ -106,9 +106,9 @@ function Contact() {
                 <h5 className="mb-2 text-3xl font-bold tracking-tight text-orange-600 dark:text-white md:text-5xl">
                   Get In Touch:
                 </h5>
-                <p className="mb-3  text-orange-600 md:text-2xl ">
+                {/* <p className="mb-3  text-orange-600 md:text-2xl ">
                   Fill the form to start a Conversation
-                </p>
+                </p> */}
                 <p className="mb-3 text-orange-600  md:text-2xl">
                   Almora, Uttarakhand, India
                 </p>

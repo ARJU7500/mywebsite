@@ -13,7 +13,7 @@ const Header = () => {
     { id: 2, text: "EDUCATION", link: "#education" },
     { id: 3, text: "SKILLS", link: "#skills" },
     { id: 4, text: "PROJECTS", link: "#projects" },
-    { id: 5, text: "INTERNSHIP", link: "#internship" },
+    { id: 5, text: "WORK_EXPERIENCE", link: "#internship" },
     { id: 6, text: "CONTACT_ME", link: "#contact" },
   ];
 

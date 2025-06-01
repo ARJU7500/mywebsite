@@ -1,32 +1,12 @@
 [
     {
         "id": "1",
-        "icon": "./icon/react.png",
-        "name": "ReactJs"
+        "icon": "./icon/vb.png",
+        "name": "ADO.net"
     },
     {
         "id": "2",
-        "icon": "./icon/js.png",
-        "name": "javaScript"
-    },
-    {
-        "id": "3",
-        "icon": "./icon/css.png",
-        "name": "CSS3"
-    },
-    {
-        "id": "4",
-        "icon": "./icon/html.png",
-        "name": "HTML5"
-    },
-    {
-        "id": "5",
-        "icon": "./icon/boot.png",
-        "name": "Bootstrap"
-    },
-    {
-        "id": "6",
-        "icon": "",
-        "name": " TailWind CSS"
+        "icon": "./icon/ado.png",
+        "name": "VB.net"
     }
 ]

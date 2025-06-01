@@ -8,10 +8,10 @@ function Project() {
           Projects
         </h1>
         <p className=" font-semibold text-center mt-2 text-orange-600 text-sm md:text-3xl">
-          I have worked on a web apps. Here are some of my projects.
+          I have worked on Some Projects. Here are some of my Personal projects.
         </p>
         <div class="flex flex-wrap justify-center items-center mx-auto px-4 lg:mx-4 gap-2 my-10 md:gap-10 lg:flex">
-          <ProjectCard />
+          {/* <ProjectCard /> */}
         </div>
       </section>
     </>

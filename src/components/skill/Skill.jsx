@@ -9,12 +9,10 @@ function Skill() {
         My Skills
       </h1>
       <p className="text-center mt-2 text-orange-600 text-md md:text-2xl">
-        Here are some of my skills on which I have been working on for the past
-        some years and some I have basic knowledge.
-      </p>
+      Here are some of the skills I have been working with over the past 9 months, including some that I use on a daily basis.</p>
       <div className="flex flex-col gap-5 justify-between items-center mx-auto my-10 md:flex md:flex-col md:gap-5 md:px-2 lg:flex-row lg:justify-between">
-        <Card title="Web Technology" />
-        <ProgCard title="Programming Language" />
+        <Card title="Back-End Technology" />
+        <ProgCard title="DataBase Technology" />
         <OtherCard title="Other Technology " />
       </div>
     </section>

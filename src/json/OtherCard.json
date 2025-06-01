@@ -1,37 +1,42 @@
 [
     {
         "id": "1",
+        "icon": "./icon/visualApp.png",
+        "name": "Visual S/w"
+    },
+    {
+        "id": "2",
+        "icon": "./icon/toad.png",
+        "name": "Toad"
+    },
+    {
+        "id": "3",
+        "icon": "./icon/asp.png",
+        "name": "ASP.net"
+    },
+    {
+        "id": "4",
+        "icon": "./icon/chatGpt.png",
+        "name": "AI"
+    },
+    {
+        "id": "5",
         "icon": "./icon/git.png",
         "name": "Git"
     },
     {
-        "id": "2",
+        "id": "6",
         "icon": "./icon/github.png",
         "name": "Github"
     },
     {
-        "id": "3",
-        "icon": "./icon/vsd.png",
-        "name": "VSCode"
+        "id": "7",
+        "icon": "./icon/c.png",
+        "name": "C"
     },
     {
-        "id": "4",
-        "icon": "./icon/docker.png",
-        "name": "Docker"
-    },
-    {
-        "id": "6",
-        "icon": "",
-        "name": "Eclips "
-    },
-    {
-        "id": "5",
-        "icon": "./icon/aws.png",
-        "name": "AWS"
-    },
-    {
-        "id": "6",
-        "icon": "./icon/slte.png",
-        "name": "Sublime "
+        "id": "8",
+        "icon": "./icon/cpp.png",
+        "name": "C++"
     }
 ]

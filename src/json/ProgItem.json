@@ -1,27 +1,12 @@
 [
     {
         "id": "1",
-        "icon": "./icon/c.png",
-        "name": "C"
+        "icon": "./icon/sql.png",
+        "name": "SQL"
     },
     {
         "id": "2",
-        "icon": "./icon/cpp.png",
-        "name": "C++"
-    },
-    {
-        "id": "3",
-        "icon": "",
-        "name": "SQL/PLSQL"
-    },
-    {
-        "id": "4",
-        "icon": "./icon/java.png",
-        "name": "Java"
-    },
-    {
-        "id": "5",
-        "icon": "./icon/cs.png",
-        "name": "C#"
+        "icon": "./icon/oracle.png",
+        "name": "Oracle"
     }
 ]

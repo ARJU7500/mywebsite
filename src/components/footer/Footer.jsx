@@ -37,7 +37,7 @@ function Footer() {
                 href="#internship"
                 className="hover:underline me-4 md:me-6  text-orange-600"
               >
-                Internship
+                WORK_EXPERIENCE
               </a>
             </li>
             <li>
