@@ -8,5 +8,10 @@
         "id": "2",
         "icon": "./icon/ado.png",
         "name": "VB.net"
+    },
+    {
+        "id": "3",
+        "icon": "./icon/vb.png",
+        "name": "asp.net core"
     }
 ]

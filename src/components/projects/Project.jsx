@@ -11,7 +11,7 @@ function Project() {
           I have worked on Some Projects. Here are some of my Personal projects.
         </p>
         <div class="flex flex-wrap justify-center items-center mx-auto px-4 lg:mx-4 gap-2 my-10 md:gap-10 lg:flex">
-          {/* <ProjectCard /> */}
+          <ProjectCard />
         </div>
       </section>
     </>

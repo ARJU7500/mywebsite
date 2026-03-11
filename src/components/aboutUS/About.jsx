@@ -22,10 +22,11 @@ function About() {
           </p>
           <p className="text-orange-600 text-[13px] md:text-[15px] mb-2 w-[100%] md:text-xl md:px-3 md:leading-8 lg:px-0">
            I’m from Uttarakhand and have completed all my education there.
-          Currently, I live in Delhi. I’ve been working as a software developer for the past 9 months at Team Elogisol Pvt. Ltd..
+          Currently, I live in New Delhi. I’ve been working as a software developer for the past 1.5 years at Team Elogisol Pvt. Ltd..
           My specialization is in backend development and database management.
           Apart from my professional work, I enjoy traveling—either solo or with friends. I love learning new things and
           always try to do or explore something different. I also enjoy sharing my knowledge and experiences with others.
+          "Currently i am Looking For Change and new opportunities in the field of software development/Engineer, Dot Net Developer and i am open to work."
         </p>
         <Link
           to="https://drive.google.com/drive/folders/17y2Pa-Tb5ce8leIYUVOt1RPvppjTt0lU?usp=sharing"

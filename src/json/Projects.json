@@ -1,31 +1,10 @@
 [
-    {
-        "id": 1,
-        "name": "College Website",
-        "image": "./project/collegeWeb.png",
-        "link": "https://github.com/ARJU7500/project-in-college-website",
-        "year": 2021,
-        "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), PHP (BAckend), MYSQL (Database)",
-        "about": "This is Diploma Major project. which is created for college(Government Polytechnic Dwarahat, Almora). where we display the full information about the colleges and also include hostel and library management systems."
-    },
-    {
-        "id": 2,
-        "name": "Read Store",
-        "image": "./project/ec.png",
-        "link": "https://github.com/ARJU7500/EcomerceWebsiteReactJs",
-        "year": 2022,
-        "technology": "HTML, CSS, javaScript, Bootstarp (Freamework), ReactJs (Library)",
-        "about": "this is E-commerce website.",
-        "demoLink": "https://arju7500.github.io/E-commerce_Website/"
-    },
-    {
-        "id": 3,
-        "image": "./project/game.png",
-        "name": "Game Website",
-        "link": "https://github.com/ARJU7500/mygame",
-        "year": 2021,
-        "technology": "HTML, CSS, javaScript",
-        "about": "this is gaming website.",
-        "demoLink": "https://arju7500.github.io/mygame/"
-    }
+  {
+    "id": 1,
+    "name": "Stock Management System",
+    "image": "./project/SMS.png",
+    "link": "https://github.com/ARJU7500/MyShop",
+    "year": 2026,
+    "technology": "Angular,Bootstrap,Asp.net core web api,SQL Server"
+  }
 ]
