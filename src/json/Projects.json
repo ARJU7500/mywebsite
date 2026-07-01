@@ -6,5 +6,13 @@
     "link": "https://github.com/ARJU7500/MyShop",
     "year": 2026,
     "technology": "Angular,Bootstrap,Asp.net core web api,SQL Server"
+  },
+  {
+    "id": 2,
+    "name": "Employee Management System",
+    "image": "./project/webApi.jpg",
+    "link": "https://github.com/ARJU7500/login-with-jwt-token",
+    "year": 2026,
+    "technology": "Asp.net core web api,SQL Server"
   }
 ]

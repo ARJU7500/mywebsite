@@ -14,9 +14,19 @@
         "image": "./job/elogisol.png",
         "name": "Team Elogisol Private Limited",
         "work": "Software Development",
-        "date": "14 Oct 2024 - Present",
+        "date": "14 Oct 2024 - March 2026",
+        "title": "Software Engineer",
+        "description": "Team Elogisol Private Limited is a professionally managed IT product and IT enabled services Provider Company focused on the Logistics domain. I Joined as a Software Engineer.",
+        "skills": "Dot Net Frameworks (ASp.net,ADO.net,VB.net), Core, MVC, Oracle and SQL."
+    },
+    {
+        "Id": 3,
+        "image": "./job/btj.png",
+        "name": "BTJ Alpha Technology Private Limited",
+        "work": "Software Development",
+        "date": "09 June 2026 - 29 June 2026",
         "title": "Software Developer",
-        "description": "Team Elogisol Private Limited is a professionally managed IT product and IT enabled services Provider Company focused on the Logistics domain. I Joined as a Software Developer.",
-        "skills": "Dot Net Frameworks (ADO.net,VB.net),Oracle and SQL."
+        "description": "BTJ Alpha Technology Pvt Ltd is a trusted digital transformation company delivering innovative IT and marketing solutions to startups, enterprises, and global brands. We help businesses modernize operations,enhance digital presence, and achieve sustainable growth through advanced technologies. Company focused on the Door-To-Door Logistics. I Joined as a Software Developer.",
+        "skills": "ASP.net Core web API (10),Angular(21) and SQL server."
     }
 ]

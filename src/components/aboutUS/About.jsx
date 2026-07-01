@@ -22,7 +22,7 @@ function About() {
           </p>
           <p className="text-orange-600 text-[13px] md:text-[15px] mb-2 w-[100%] md:text-xl md:px-3 md:leading-8 lg:px-0">
            I’m from Uttarakhand and have completed all my education there.
-          Currently, I live in New Delhi. I’ve been working as a software developer for the past 1.5 years at Team Elogisol Pvt. Ltd..
+          Currently, I live in New Delhi. I’ve been working as a software developer for the past 1.5+ years at Team Elogisol Pvt. Ltd..
           My specialization is in backend development and database management.
           Apart from my professional work, I enjoy traveling—either solo or with friends. I love learning new things and
           always try to do or explore something different. I also enjoy sharing my knowledge and experiences with others.

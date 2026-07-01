@@ -25,7 +25,7 @@ function Education() {
                 Bachelor of Technology, Computer Science & Engineering
               </h2>
               <p className="text-orange-600  text-center text-sm md:text-xl lg:text-start md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                Oct 2021 - June 2024
+                Oct 2021 - June 2025
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ function Education() {
           </div>
         </div>
         <div className=" para pl-5 text-orange-600 font-bold text-2xl hidden lg:block lg:text-3xl lg:w-[40%]">
-          <h1>Oct 2021 - June 2024</h1>
+          <h1>Oct 2021 - June 2025</h1>
         </div>
       </div>
       {/* DIPLOMA  */}
