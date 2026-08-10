@@ -1,148 +1,860 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Contact() {
-  const [contact, setContact]=useState({
-    name:"",
-    email:"",
-    subject:"",
-    message:""
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  const handlerInputChange=(e)=>
-  {
-      const {name,value}=e.target;
-      setContact((prev)=>({...prev,[name]:value}));
-  }
-  const handelSubmitData=(e)=>
-  {
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    setContact((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmitData = (e) => {
     e.preventDefault();
+
     console.log(contact);
-  }
+
+    // Connect your API / EmailJS here later
+  };
+
   return (
-    <section className="px-2 lg:px-10" id="contact">
-      <h1 className="text-center mt-10 text-orange-600 text-5xl font-bold md:text-6xl ">
-        Contact
-      </h1>
-      <p className=" text-center mt-2 text-orange-600 text-lg md:text-2xl">
-        Feel free to reach out to me for any opportunities!
-      </p>
-      <div className=" flex flex-col-reverse justify-between px-4 gap-4 mt-10 lg:flex lg:flex-row lg:justify-between">
-        <div className="flex p-2 shadow-md md:p-2 lg:w-[50%]">
-          <div className=" w-[100%] md:w-[100%]">
-            <form onSubmit={handelSubmitData}>
-              <div className="mb-5">
-                <label
-                  for="name"
-                  className="mb-3 block text-base font-medium text-orange-600 md:text-xl"
-                >
-                  Full Name
-                </label>
-                <input
-                  type="text" disabled
-                  name="name"
-                  id="name"
-                  placeholder="Full Name"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[orange] focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
-                />
-              </div>
-              <div className="mb-5">
-                <label
-                  for="email"
-                  className="mb-3 block text-base font-medium text-orange-600 md:text-xl"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email" disabled
-                  name="email"
-                  id="email"
-                  placeholder="example@domain.com"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
-                />
-              </div>
-              <div className="mb-5">
-                <label
-                  for="subject"
-                  className="mb-3 block text-base font-medium text-orange-600 md:text-xl"
-                >
-                  Subject
-                </label>
-                <input
-                  type="text" disabled
-                  name="subject"
-                  id="subject"
-                  placeholder="Enter your subject"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
-                />
-              </div>
-              <div className="mb-5">
-                <label
-                  for="message"
-                  className="mb-3 block text-base font-medium text-orange-600 md:text-xl"
-                >
-                  Message
-                </label>
-                <textarea
-                  rows="4" disabled
-                  name="message"
-                  id="message"
-                  placeholder="Type your message(Connect through Email or Whatsapp)"
-                  className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-orange-300 focus:shadow-md" value={name.contact} onChange={handlerInputChange} required
-                ></textarea>
-              </div>
-              <div className=" flex justify-center items-center md:flex md:justify-center md:items-center">
-                <button className="hover:shadow-form rounded-md bg-orange-600 py-3 px-8 text-base font-semibold text-white outline-none md:font-bold md:text-lg">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div className="md:w-full md:flex md:justify-center md:text-center lg:w-[50%]">
-          <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:flex md:flex-col  md:justify-center md:items-center">
-            <img src="./contact/git.png" className="md:w-[80%] lg:w-[80%]" />
-            <div className="p-5">
-              <div className="flex flex-col justify-center items-center ">
-                <h5 className="mb-2 text-3xl font-bold tracking-tight text-orange-600 dark:text-white md:text-5xl">
-                  Get In Touch:
-                </h5>
-                {/* <p className="mb-3  text-orange-600 md:text-2xl ">
-                  Fill the form to start a Conversation
-                </p> */}
-                <p className="mb-3 text-orange-600  md:text-2xl">
-                  Almora, Uttarakhand, India
-                </p>
-                <p className="mb-3  text-orange-600 md:text-2xl">
-                  Email: an096237@gmail.com
-                </p>
-                <p className="mb-3  text-orange-600 md:text-2xl">
-                  mobile Number : +917668213002
-                </p>
-                <p className="mb-3 text-orange-600 md:text-2xl">
-                  Whatsapp Number : +917668213002
-                </p>
-              </div>
-              <div className="flex justify-between md:flex md:justify-between md:mt-10 lg:flex lg:justify-between">
-                <Link
-                  target="_blank"
-                  to="https://www.linkedin.com/in/arjun-negi-a28ba61b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwlpSw0GhTUSz3HdPWM0m0Q%3D%3D"
-                >
-                  <img src="./contact/ld.png" />
-                </Link>
-                <Link to="https://github.com/ARJU7500" target="_blank">
-                  <img src="./contact/gitghub.png" />
-                </Link>
-                <Link to="">
-                  <img src="./contact/tw.png" />
-                </Link>
-                <Link to="">
-                  <img src="./contact/instra.png" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section
+      id="contact"
+      className="
+        relative
+        overflow-hidden
+        min-h-screen
+        bg-[#050B24]
+        text-white
+        px-5
+        py-20
+        lg:px-16
+        xl:px-24
+      "
+    >
+
+      {/* ================= BACKGROUND GLOW ================= */}
+
+      <div
+        className="
+          absolute
+          -left-40
+          top-20
+          w-96
+          h-96
+          rounded-full
+          bg-purple-600/10
+          blur-3xl
+        "
+      ></div>
+
+      <div
+        className="
+          absolute
+          -right-40
+          bottom-0
+          w-96
+          h-96
+          rounded-full
+          bg-pink-600/10
+          blur-3xl
+        "
+      ></div>
+
+
+      {/* ================= DECORATIVE DOTS ================= */}
+
+      <div
+        className="
+          absolute
+          right-10
+          top-20
+          hidden
+          lg:grid
+          grid-cols-5
+          gap-4
+          opacity-30
+        "
+      >
+        {[...Array(25)].map((_, index) => (
+          <span
+            key={index}
+            className="w-1 h-1 rounded-full bg-purple-400"
+          ></span>
+        ))}
       </div>
+
+
+      {/* ================= MAIN ================= */}
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+
+
+        {/* ================= HEADING ================= */}
+
+        <div className="text-center mb-16">
+
+          <p
+            className="
+              text-purple-400
+              font-semibold
+              uppercase
+              tracking-[0.3em]
+              text-sm
+              mb-4
+            "
+          >
+            Let's Connect
+          </p>
+
+          <h1
+            className="
+              text-4xl
+              md:text-5xl
+              lg:text-6xl
+              font-bold
+            "
+          >
+            Let's{" "}
+            <span
+              className="
+                bg-gradient-to-r
+                from-purple-400
+                via-violet-400
+                to-pink-500
+                bg-clip-text
+                text-transparent
+              "
+            >
+              Talk
+            </span>
+          </h1>
+
+          <div
+            className="
+              w-24
+              h-1
+              mx-auto
+              mt-6
+              rounded-full
+              bg-gradient-to-r
+              from-purple-500
+              to-pink-500
+            "
+          ></div>
+
+          <p
+            className="
+              max-w-2xl
+              mx-auto
+              mt-6
+              text-gray-400
+              text-base
+              md:text-lg
+              leading-7
+            "
+          >
+            Have a project, job opportunity, or just want to
+            connect? Feel free to send me a message.
+          </p>
+
+        </div>
+
+
+        {/* ================= CONTACT GRID ================= */}
+
+        <div
+          className="
+            grid
+            grid-cols-1
+            lg:grid-cols-5
+            gap-8
+            items-stretch
+          "
+        >
+
+
+          {/* ================================================= */}
+          {/* LEFT SIDE */}
+          {/* ================================================= */}
+
+          <div className="lg:col-span-2">
+
+            <div
+              className="
+                h-full
+                rounded-2xl
+                p-[1px]
+                bg-gradient-to-br
+                from-purple-500/60
+                via-violet-500/30
+                to-pink-500/60
+                shadow-xl
+                shadow-purple-500/10
+              "
+            >
+
+              <div
+                className="
+                  h-full
+                  rounded-2xl
+                  bg-[#080F2A]
+                  p-7
+                  md:p-8
+                "
+              >
+
+                {/* Title */}
+
+                <p
+                  className="
+                    text-purple-400
+                    text-sm
+                    uppercase
+                    tracking-widest
+                    font-semibold
+                    mb-3
+                  "
+                >
+                  Contact Information
+                </p>
+
+                <h2
+                  className="
+                    text-3xl
+                    font-bold
+                    text-white
+                  "
+                >
+                  Get In Touch
+                </h2>
+
+                <p
+                  className="
+                    mt-4
+                    text-gray-400
+                    leading-7
+                  "
+                >
+                  I'm always open to discussing new opportunities,
+                  interesting projects, collaborations, and
+                  professional connections.
+                </p>
+
+
+                {/* ================= CONTACT ITEMS ================= */}
+
+                <div className="mt-8 space-y-4">
+
+
+                  {/* Location */}
+
+                  <div
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-4
+                      p-4
+                      rounded-xl
+                      bg-[#050B24]
+                      border
+                      border-purple-500/10
+                      hover:border-purple-500/40
+                      transition-all
+                      duration-300
+                    "
+                  >
+
+                    <div
+                      className="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        rounded-xl
+                        bg-purple-500/10
+                        text-2xl
+                      "
+                    >
+                      📍
+                    </div>
+
+                    <div>
+                      <p className="text-xs text-purple-400 uppercase">
+                        Location
+                      </p>
+
+                      <p className="text-gray-300 mt-1">
+                        New Delhi, India
+                      </p>
+                    </div>
+
+                  </div>
+
+
+                  {/* Email */}
+
+                  <div
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-4
+                      p-4
+                      rounded-xl
+                      bg-[#050B24]
+                      border
+                      border-purple-500/10
+                      hover:border-purple-500/40
+                      transition-all
+                      duration-300
+                    "
+                  >
+
+                    <div
+                      className="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        rounded-xl
+                        bg-purple-500/10
+                        text-2xl
+                      "
+                    >
+                      ✉️
+                    </div>
+
+                    <div className="min-w-0">
+
+                      <p className="text-xs text-purple-400 uppercase">
+                        Email
+                      </p>
+
+                      <a
+                        href="mailto:an096237@gmail.com"
+                        className="
+                          block
+                          mt-1
+                          text-gray-300
+                          hover:text-purple-400
+                          transition-colors
+                          truncate
+                        "
+                      >
+                        an096237@gmail.com
+                      </a>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* Phone */}
+
+                  <div
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-4
+                      p-4
+                      rounded-xl
+                      bg-[#050B24]
+                      border
+                      border-purple-500/10
+                      hover:border-purple-500/40
+                      transition-all
+                      duration-300
+                    "
+                  >
+
+                    <div
+                      className="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        rounded-xl
+                        bg-purple-500/10
+                        text-2xl
+                      "
+                    >
+                      📱
+                    </div>
+
+                    <div>
+
+                      <p className="text-xs text-purple-400 uppercase">
+                        Phone
+                      </p>
+
+                      <a
+                        href="tel:+917668213002"
+                        className="
+                          block
+                          mt-1
+                          text-gray-300
+                          hover:text-purple-400
+                          transition-colors
+                        "
+                      >
+                        +91 7668213002
+                      </a>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* WhatsApp */}
+
+                  <div
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-4
+                      p-4
+                      rounded-xl
+                      bg-[#050B24]
+                      border
+                      border-purple-500/10
+                      hover:border-purple-500/40
+                      transition-all
+                      duration-300
+                    "
+                  >
+
+                    <div
+                      className="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        rounded-xl
+                        bg-purple-500/10
+                        text-2xl
+                      "
+                    >
+                      💬
+                    </div>
+
+                    <div>
+
+                      <p className="text-xs text-purple-400 uppercase">
+                        WhatsApp
+                      </p>
+
+                      <a
+                        href="https://wa.me/917668213002"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                          block
+                          mt-1
+                          text-gray-300
+                          hover:text-purple-400
+                          transition-colors
+                        "
+                      >
+                        +91 7668213002
+                      </a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                {/* ================= SOCIAL ================= */}
+
+                <div className="mt-8">
+
+                  <p
+                    className="
+                      text-sm
+                      text-gray-500
+                      uppercase
+                      tracking-widest
+                      mb-4
+                    "
+                  >
+                    Find Me Online
+                  </p>
+
+                  <div className="flex gap-3">
+
+                    <a
+                      href="https://github.com/ARJU7500"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+                        px-5
+                        py-2.5
+                        rounded-lg
+                        border
+                        border-purple-500/20
+                        bg-[#050B24]
+                        text-gray-300
+                        hover:text-white
+                        hover:border-purple-500
+                        transition-all
+                      "
+                    >
+                      GitHub
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/arjunegi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+                        px-5
+                        py-2.5
+                        rounded-lg
+                        border
+                        border-purple-500/20
+                        bg-[#050B24]
+                        text-gray-300
+                        hover:text-white
+                        hover:border-purple-500
+                        transition-all
+                      "
+                    >
+                      LinkedIn
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* ================================================= */}
+          {/* RIGHT SIDE - FORM */}
+          {/* ================================================= */}
+
+          <div className="lg:col-span-3">
+
+            <div
+              className="
+                rounded-2xl
+                p-[1px]
+                bg-gradient-to-br
+                from-purple-500/60
+                via-violet-500/30
+                to-pink-500/60
+                shadow-xl
+                shadow-purple-500/10
+              "
+            >
+
+              <div
+                className="
+                  rounded-2xl
+                  bg-[#080F2A]
+                  p-7
+                  md:p-8
+                "
+              >
+
+                <div className="mb-7">
+
+                  <p
+                    className="
+                      text-purple-400
+                      text-sm
+                      uppercase
+                      tracking-widest
+                      font-semibold
+                    "
+                  >
+                    Send a Message
+                  </p>
+
+                  <h2
+                    className="
+                      text-3xl
+                      font-bold
+                      text-white
+                      mt-2
+                    "
+                  >
+                    Start a Conversation
+                  </h2>
+
+                </div>
+
+
+                <form
+                  onSubmit={handleSubmitData}
+                  className="space-y-5"
+                >
+
+                  {/* Name + Email */}
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                    {/* Name */}
+
+                    <div>
+
+                      <label
+                        htmlFor="name"
+                        className="
+                          block
+                          mb-2
+                          text-sm
+                          font-medium
+                          text-gray-300
+                        "
+                      >
+                        Full Name
+                      </label>
+
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={contact.name}
+                        onChange={handleInputChange}
+                        placeholder="Your name"
+                        required
+                        className="
+                          w-full
+                          px-4
+                          py-3
+                          rounded-xl
+                          bg-[#050B24]
+                          border
+                          border-purple-500/20
+                          text-white
+                          placeholder-gray-600
+                          outline-none
+                          focus:border-purple-500
+                          focus:ring-2
+                          focus:ring-purple-500/10
+                          transition-all
+                        "
+                      />
+
+                    </div>
+
+
+                    {/* Email */}
+
+                    <div>
+
+                      <label
+                        htmlFor="email"
+                        className="
+                          block
+                          mb-2
+                          text-sm
+                          font-medium
+                          text-gray-300
+                        "
+                      >
+                        Email Address
+                      </label>
+
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={contact.email}
+                        onChange={handleInputChange}
+                        placeholder="your@email.com"
+                        required
+                        className="
+                          w-full
+                          px-4
+                          py-3
+                          rounded-xl
+                          bg-[#050B24]
+                          border
+                          border-purple-500/20
+                          text-white
+                          placeholder-gray-600
+                          outline-none
+                          focus:border-purple-500
+                          focus:ring-2
+                          focus:ring-purple-500/10
+                          transition-all
+                        "
+                      />
+
+                    </div>
+
+                  </div>
+
+
+                  {/* Subject */}
+
+                  <div>
+
+                    <label
+                      htmlFor="subject"
+                      className="
+                        block
+                        mb-2
+                        text-sm
+                        font-medium
+                        text-gray-300
+                      "
+                    >
+                      Subject
+                    </label>
+
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      value={contact.subject}
+                      onChange={handleInputChange}
+                      placeholder="What would you like to discuss?"
+                      required
+                      className="
+                        w-full
+                        px-4
+                        py-3
+                        rounded-xl
+                        bg-[#050B24]
+                        border
+                        border-purple-500/20
+                        text-white
+                        placeholder-gray-600
+                        outline-none
+                        focus:border-purple-500
+                        focus:ring-2
+                        focus:ring-purple-500/10
+                        transition-all
+                      "
+                    />
+
+                  </div>
+
+
+                  {/* Message */}
+
+                  <div>
+
+                    <label
+                      htmlFor="message"
+                      className="
+                        block
+                        mb-2
+                        text-sm
+                        font-medium
+                        text-gray-300
+                      "
+                    >
+                      Message
+                    </label>
+
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={contact.message}
+                      onChange={handleInputChange}
+                      placeholder="Write your message here..."
+                      required
+                      rows="7"
+                      className="
+                        w-full
+                        px-4
+                        py-3
+                        rounded-xl
+                        bg-[#050B24]
+                        border
+                        border-purple-500/20
+                        text-white
+                        placeholder-gray-600
+                        outline-none
+                        resize-none
+                        focus:border-purple-500
+                        focus:ring-2
+                        focus:ring-purple-500/10
+                        transition-all
+                      "
+                    ></textarea>
+
+                  </div>
+
+
+                  {/* Submit */}
+
+                  <button
+                    type="submit"
+                    className="
+                      group
+                      w-full
+                      py-3.5
+                      rounded-xl
+                      font-semibold
+                      text-white
+                      bg-gradient-to-r
+                      from-purple-600
+                      to-pink-500
+                      hover:from-purple-500
+                      hover:to-pink-500
+                      transition-all
+                      duration-300
+                      shadow-lg
+                      shadow-purple-500/20
+                    "
+                  >
+
+                    <span className="flex items-center justify-center gap-2">
+
+                      Send Message
+
+                      <span
+                        className="
+                          transition-transform
+                          duration-300
+                          group-hover:translate-x-1
+                        "
+                      >
+                        →
+                      </span>
+
+                    </span>
+
+                  </button>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
   );
 }

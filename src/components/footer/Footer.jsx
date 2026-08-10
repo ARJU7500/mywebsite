@@ -1,61 +1,261 @@
-import { Link } from "react-router-dom";
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4 lg:px-10">
-      <div className=" mx-auto p-4 md:py-8">
-        <div className=" flex flex-col items-center justify-between lg:flex lg:flex-row">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse logo"
+    <footer
+      className="
+        relative
+        bg-[#030719]
+        text-white
+        border-t
+        border-purple-500/20
+      "
+    >
+      <div className="max-w-7xl mx-auto px-5 py-10 lg:px-10">
+
+        {/* Main Footer */}
+        <div
+          className="
+            flex
+            flex-col
+            items-center
+            justify-between
+            gap-8
+            lg:flex-row
+          "
+        >
+
+          {/* Logo */}
+          <div className="flex items-center">
+
+            <a
+              href="#about"
+              className="flex items-center"
+            >
+              <img
+                src="./logo/logo.png"
+                className="
+                  h-12
+                  md:h-14
+                  object-contain
+                "
+                alt="Arjun Negi"
+              />
+            </a>
+
+          </div>
+
+
+          {/* Navigation */}
+          <ul
+            className="
+              flex
+              flex-wrap
+              justify-center
+              items-center
+              gap-x-6
+              gap-y-4
+              text-sm
+              md:text-base
+              font-medium
+            "
           >
-            <img
-              src="./logo/logo.png"
-              className="h-[70px] flex justify-center items-center"
-              alt="Arjun Negi"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-          </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 md:text-3xl lg:text-xl">
+
             <li>
               <a
-                href="/"
-                className="hover:underline me-4 md:me-6 text-orange-600"
+                href="#about"
+                className="
+                  text-gray-400
+                  hover:text-purple-400
+                  transition-colors
+                  duration-300
+                "
               >
                 About
               </a>
             </li>
+
+            <li>
+              <a
+                href="#education"
+                className="
+                  text-gray-400
+                  hover:text-purple-400
+                  transition-colors
+                  duration-300
+                "
+              >
+                Education
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#skills"
+                className="
+                  text-gray-400
+                  hover:text-purple-400
+                  transition-colors
+                  duration-300
+                "
+              >
+                Skills
+              </a>
+            </li>
+
             <li>
               <a
                 href="#projects"
-                className="hover:underline me-4 md:me-6  text-orange-600"
+                className="
+                  text-gray-400
+                  hover:text-purple-400
+                  transition-colors
+                  duration-300
+                "
               >
                 Projects
               </a>
             </li>
+
             <li>
               <a
                 href="#internship"
-                className="hover:underline me-4 md:me-6  text-orange-600"
+                className="
+                  text-gray-400
+                  hover:text-purple-400
+                  transition-colors
+                  duration-300
+                "
               >
-                WORK_EXPERIENCE
+                Experience
               </a>
             </li>
+
             <li>
-              <a href="#contact" className="hover:underline  text-orange-600">
+              <a
+                href="#contact"
+                className="
+                  text-gray-400
+                  hover:text-purple-400
+                  transition-colors
+                  duration-300
+                "
+              >
                 Contact
               </a>
             </li>
+
           </ul>
+
+
+          {/* Social Buttons */}
+          <div className="flex items-center gap-3">
+
+            {/* GitHub */}
+            <a
+              href="https://github.com/ARJU7500"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="
+                w-10
+                h-10
+                flex
+                items-center
+                justify-center
+                rounded-lg
+                border
+                border-purple-500/30
+                bg-[#080F2A]
+                text-gray-300
+                hover:text-white
+                hover:border-purple-500
+                hover:bg-purple-600
+                transition-all
+                duration-300
+              "
+            >
+              Git
+            </a>
+
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/arjunegi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="
+                w-10
+                h-10
+                flex
+                items-center
+                justify-center
+                rounded-lg
+                bg-gradient-to-r
+                from-purple-600
+                to-pink-500
+                text-white
+                font-semibold
+                hover:from-purple-700
+                hover:to-pink-600
+                transition-all
+                duration-300
+              "
+            >
+              in
+            </a>
+
+          </div>
+
         </div>
-        <hr className="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-2" />
-        <span className="block text-s sm:text-center dark:text-gray-400  text-orange-600 md:text-2xl lg:text-lg lg:flex lg:justify-center lg:justify-items-center">
-          © 2024
-          <a href="#" className="hover:underline">
-            Arjun Negi
-          </a>
-          . All Rights Reserved.
-        </span>
+
+
+        {/* Divider */}
+        <div
+          className="
+            my-8
+            h-px
+            bg-gradient-to-r
+            from-transparent
+            via-purple-500/30
+            to-transparent
+          "
+        ></div>
+
+
+        {/* Copyright */}
+        <div className="text-center">
+
+          <p className="text-sm text-gray-500">
+
+            © {currentYear}{" "}
+
+            <span
+              className="
+                bg-gradient-to-r
+                from-purple-400
+                to-pink-500
+                bg-clip-text
+                text-transparent
+                font-semibold
+              "
+            >
+              Arjun Negi
+            </span>
+
+            . All Rights Reserved.
+
+          </p>
+
+          <p className="mt-2 text-xs text-gray-600">
+            Designed & Developed by Arjun Negi
+          </p>
+
+        </div>
+
       </div>
+
     </footer>
   );
 }

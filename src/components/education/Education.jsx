@@ -1,139 +1,352 @@
 import React from "react";
 
 function Education() {
+  const educationData = [
+    {
+      id: 1,
+      degree: "Bachelor of Technology, Computer Science & Engineering",
+      institute:
+        "Institute of Technology Gopeshwar, Chamoli",
+      duration: "Oct 2021 - June 2025",
+      description:
+        "I completed my Bachelor's degree in Computer Science & Engineering from Veer Madho Singh Bhandari Campus Institute of Technology Gopeshwar, Chamoli, Uttarakhand, India.",
+      icon: "🎓",
+    },
+    {
+      id: 2,
+      degree: "Diploma, Information Technology",
+      institute:
+        "Government Polytechnic Dwarahat, Almora",
+      duration: "Aug 2018 - Oct 2021",
+      description:
+        "I completed my Diploma in Information Technology from Government Polytechnic Dwarahat, Almora, Uttarakhand, India.",
+      icon: "💻",
+    },
+    {
+      id: 3,
+      degree: "Intermediate, Science Stream",
+      institute:
+        "Government Inter College Jalali, Almora",
+      duration: "April 2017 - May 2018",
+      description:
+        "I completed my Intermediate in the Science stream from Government Inter College Jalali, Almora, Uttarakhand, India.",
+      icon: "📚",
+    },
+    {
+      id: 4,
+      degree: "High School, General",
+      institute:
+        "Government Inter College Jalali, Almora",
+      duration: "April 2015 - May 2016",
+      description:
+        "I completed my High School from Government Inter College Jalali, Almora, Uttarakhand, India.",
+      icon: "🏫",
+    },
+  ];
+
   return (
-    <section className="px-4 lg:px-10" id="education">
-      <h1 className="text-center mt-10 text-orange-600 text-[30px] font-bold md:text-4xl">
-        Education
-      </h1>
-      <p className=" text-center mt-2 text-orange-600 text-[16px] md:text-xl">
-        My education has been a journey of self-discovery and growth. My
-        educational details are as follows.
-      </p>
-      {/* B. TECH.  */}
-      <div className=" flex flex-row flex-wrap justify-between mx-auto px-4 my-10 lg:px-4 lg:flex lg:justify-start">
-        <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
-          <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
-            <div>
-              <img src="./education/itg.png" className="w-[80px]" />
-            </div>
-            <div className="md:ml-10">
-              <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl">
-                Institute of technology Gopeshwar, Chamoli
-              </h4>
-              <h2 className="text-orange-600 text-center text-sm md:text-xl">
-                Bachelor of Technology, Computer Science & Engineering
-              </h2>
-              <p className="text-orange-600  text-center text-sm md:text-xl lg:text-start md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                Oct 2021 - June 2025
-              </p>
-            </div>
-          </div>
-          <div>
-            <p className="text-orange-600 p-2 md:text-xl">
-              I am currently graduate a Bachelor's degree in Computer Science &
-              Engineering at Veer Madho Singh Bhandari Campus Institute of
-              Technology Gopeshwar, Chamoli, Uttarakhand, India.
-            </p>
-          </div>
-        </div>
-        <div className=" para pl-5 text-orange-600 font-bold text-2xl hidden lg:block lg:text-3xl lg:w-[40%]">
-          <h1>Oct 2021 - June 2025</h1>
-        </div>
+    <section
+      id="education"
+      className="
+        relative
+        overflow-hidden
+        min-h-screen
+        bg-[#050B24]
+        text-white
+        px-5
+        py-20
+        lg:px-16
+        xl:px-24
+      "
+    >
+      {/* Background Glow */}
+      <div
+        className="
+          absolute
+          -left-32
+          top-20
+          w-72
+          h-72
+          rounded-full
+          bg-purple-700/10
+          blur-3xl
+        "
+      ></div>
+
+      <div
+        className="
+          absolute
+          -right-32
+          bottom-0
+          w-96
+          h-96
+          rounded-full
+          bg-pink-600/10
+          blur-3xl
+        "
+      ></div>
+
+      {/* Decorative dots */}
+      <div className="absolute right-10 top-20 hidden lg:grid grid-cols-4 gap-4 opacity-40">
+        {[...Array(16)].map((_, index) => (
+          <span
+            key={index}
+            className="w-1 h-1 rounded-full bg-purple-500"
+          ></span>
+        ))}
       </div>
-      {/* DIPLOMA  */}
-      <div className=" flex flex-row flex-wrap justify-between mx-auto px-4 my-10 lg:px-4 lg:flex">
-        <div className=" para pl-5 text-orange-600 font-bold text-2xl hidden lg:block lg:text-3xl lg:w-[40%]">
-          <h1 className="lg:flex lg:items-end lg:justify-end lg:mr-5">
-            Aug 2018 - Oct 2021
-          </h1>
+
+      {/* Main Container */}
+      <div className="relative z-10 max-w-6xl mx-auto">
+
+        {/* Section Heading */}
+        <div className="text-center mb-14">
+
+          <p
+            className="
+              text-purple-400
+              font-semibold
+              uppercase
+              tracking-widest
+              text-sm
+              mb-3
+            "
+          >
+            My Journey
+          </p>
+
+          <h2
+            className="
+              text-4xl
+              md:text-5xl
+              font-bold
+              text-white
+            "
+          >
+            Education
+          </h2>
+
+          <div
+            className="
+              w-20
+              h-1
+              mx-auto
+              mt-5
+              rounded-full
+              bg-gradient-to-r
+              from-purple-500
+              to-pink-500
+            "
+          ></div>
+
+          <p
+            className="
+              max-w-2xl
+              mx-auto
+              mt-6
+              text-gray-300
+              text-base
+              md:text-lg
+              leading-7
+            "
+          >
+            My education has been a journey of self-discovery and growth.
+            My educational details are as follows.
+          </p>
+
         </div>
-        <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
-          <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
-            <div>
-              <img src="./education/polly.png" className="w-[90px]" />
-            </div>
-            <div className="md:ml-5">
-              <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl">
-                Government Polytechnic Dwarahat, Almora
-              </h4>
-              <h2 className="text-orange-600 text-center text-sm md:text-xl md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                Diploma, Information Technology
-              </h2>
-              <p className="text-orange-600  text-center text-sm md:text-xl lg:text-start md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                Aug 2018 - Oct 2021
-              </p>
-            </div>
+
+
+        {/* Timeline */}
+        <div className="relative">
+
+          {/* Vertical Line */}
+          <div
+            className="
+              absolute
+              left-5
+              md:left-1/2
+              top-0
+              bottom-0
+              w-[2px]
+              bg-gradient-to-b
+              from-purple-500
+              via-pink-500
+              to-purple-500
+              md:-translate-x-1/2
+            "
+          ></div>
+
+
+          {/* Education Items */}
+          <div className="space-y-12">
+
+            {educationData.map((education, index) => (
+              <div
+                key={education.id}
+                className={`
+                  relative
+                  flex
+                  items-start
+                  md:items-center
+                  ${
+                    index % 2 === 0
+                      ? "md:flex-row"
+                      : "md:flex-row-reverse"
+                  }
+                `}
+              >
+
+                {/* Timeline Icon */}
+                <div
+                  className="
+                    absolute
+                    left-5
+                    md:left-1/2
+                    -translate-x-1/2
+                    z-20
+                    w-11
+                    h-11
+                    rounded-full
+                    flex
+                    items-center
+                    justify-center
+                    bg-[#080F2A]
+                    border-2
+                    border-purple-500
+                    shadow-lg
+                    shadow-purple-500/30
+                    text-lg
+                  "
+                >
+                  {education.icon}
+                </div>
+
+
+                {/* Card */}
+                <div
+                  className={`
+                    w-full
+                    md:w-[46%]
+                    ml-14
+                    md:ml-0
+                    ${
+                      index % 2 === 0
+                        ? "md:mr-auto"
+                        : "md:ml-auto"
+                    }
+                  `}
+                >
+
+                  <div
+                    className="
+                      group
+                      relative
+                      p-6
+                      rounded-2xl
+                      bg-[#080F2A]/90
+                      border
+                      border-purple-500/20
+                      hover:border-purple-500/60
+                      shadow-lg
+                      shadow-black/20
+                      hover:shadow-purple-500/10
+                      transition-all
+                      duration-300
+                    "
+                  >
+
+                    {/* Top Gradient Line */}
+                    <div
+                      className="
+                        absolute
+                        top-0
+                        left-0
+                        w-full
+                        h-[3px]
+                        rounded-t-2xl
+                        bg-gradient-to-r
+                        from-purple-500
+                        to-pink-500
+                      "
+                    ></div>
+
+
+                    {/* Duration */}
+                    <span
+                      className="
+                        inline-block
+                        px-3
+                        py-1
+                        rounded-full
+                        text-xs
+                        font-semibold
+                        text-purple-300
+                        bg-purple-500/10
+                        border
+                        border-purple-500/20
+                        mb-4
+                      "
+                    >
+                      {education.duration}
+                    </span>
+
+
+                    {/* Degree */}
+                    <h3
+                      className="
+                        text-xl
+                        md:text-2xl
+                        font-bold
+                        text-white
+                        mb-2
+                      "
+                    >
+                      {education.degree}
+                    </h3>
+
+
+                    {/* Institute */}
+                    <h4
+                      className="
+                        text-base
+                        md:text-lg
+                        font-semibold
+                        bg-gradient-to-r
+                        from-purple-400
+                        to-pink-400
+                        bg-clip-text
+                        text-transparent
+                        mb-4
+                      "
+                    >
+                      {education.institute}
+                    </h4>
+
+
+                    {/* Description */}
+                    <p
+                      className="
+                        text-gray-400
+                        text-sm
+                        md:text-base
+                        leading-7
+                      "
+                    >
+                      {education.description}
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            ))}
+
           </div>
-          <div>
-            <p className="text-orange-600 p-2 md:text-xl">
-              I have done my Diploma in Information Technology from Government
-              Polytechnic Dwarahat, Almora, Uttarakhand, India.
-            </p>
-          </div>
+
         </div>
-      </div>
-      {/* Intermediate */}
-      <div className=" flex flex-row flex-wrap justify-between mx-auto px-4 my-10 lg:px-4 lg:flex lg:justify-start">
-        <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
-          <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
-            <div>
-              <img src="./education/school.png" className="w-[90px]" />
-            </div>
-            <div className="md:ml-10">
-              <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl md:flex md:justify-start">
-                Government Inter college Jalali, Almora
-              </h4>
-              <h2 className="text-orange-600 text-center text-sm md:text-xl md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                Intermediate, Science Stream
-              </h2>
-              <p className="text-orange-600  text-center text-sm md:text-xl lg:text-start md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                April 2017 - May 2018
-              </p>
-            </div>
-          </div>
-          <div>
-            <p className="text-orange-600 p-2 md:text-xl">
-              I have done my Intermediate from Government Inter College Jalali,
-              Almora, Uttarakhand, India.
-            </p>
-          </div>
-        </div>
-        <div className=" para pl-5 text-orange-600 font-bold text-2xl hidden lg:block lg:text-3xl">
-          <h1>April 2017 - May 2018</h1>
-        </div>
-      </div>
-      {/* HIGHSCHOOL  */}
-      <div className=" flex flex-row flex-wrap justify-between mx-auto px-4 my-10 lg:px-4 lg:flex">
-        <div className=" para pl-5 text-orange-600 font-bold text-2xl hidden lg:block lg:text-3xl lg:w-[40%]">
-          <h1 className="lg:flex lg:items-end lg:justify-end lg:mr-5">
-            April 2015- May 2016
-          </h1>
-        </div>
-        <div className=" border-solid border-2 shadow-lg rounded-md p-2 lg:w-[60%]">
-          <div className="flex flex-col justify-center items-center bg-gray-300 rounded-md p-2 md:flex md:flex-row md:justify-start">
-            <div>
-              <img src="./education/school.png" className="w-[90px]" />
-            </div>
-            <div className="md:ml-10">
-              <h4 className="text-orange-600 text-xl text-center font-bold md:text-2xl">
-                Government Inter college Jalali, Almora
-              </h4>
-              <h2 className="text-orange-600 text-center text-sm md:text-xl md:flex md:justify-start md:items-start lg:flex lg:items-start">
-                High School, General
-              </h2>
-              <p className="text-orange-600  text-center text-sm md:text-xl md:flex md:justify-start md:items-start lg:flex lg:items-start lg:text-start">
-                April 2015- May 2016
-              </p>
-            </div>
-          </div>
-          <div>
-            <p className="text-orange-600 p-2 md:text-xl">
-              I have done my high school from Government Inter College Jalali,
-              Almora, Uttarakhand, India.
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
   );

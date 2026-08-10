@@ -1,16 +1,64 @@
 import React from "react";
 import CardList from "../card/CardList";
 import Items from "../../json/OtherCard.json";
+
 function OtherCard({ title }) {
   return (
-    <div className="border-solid border-2 border-orange-500 rounded-lg shadow-md p-5">
-      <h1 className="text-center pt-2 pb-2 text-orange-600 font-semibold text-xl">
-        {title}
-      </h1>
-      <div className="flex flex-wrap gap-5 justify-between items-center md:flex md:flex-wrap md:gap-5 md:w-[600px] md:mt-5 lg:w-[400px]">
-        {Items.map((item, index) => (
-          <CardList key={item.id} icon={item.icon} name={item.name} />
-        ))}
+    <div
+      className="
+        h-full
+        rounded-2xl
+        p-[1px]
+        bg-gradient-to-r
+        from-purple-500
+        to-pink-500
+        shadow-xl
+        shadow-purple-500/10
+      "
+    >
+      <div
+        className="
+          h-full
+          rounded-2xl
+          bg-[#080F2A]
+          p-6
+        "
+      >
+        {/* Title */}
+        <h2
+          className="
+            text-center
+            text-xl
+            md:text-2xl
+            font-bold
+            bg-gradient-to-r
+            from-purple-400
+            to-pink-500
+            bg-clip-text
+            text-transparent
+            mb-6
+          "
+        >
+          {title}
+        </h2>
+
+        {/* Skills */}
+        <div
+          className="
+            grid
+            grid-cols-2
+            sm:grid-cols-3
+            gap-3
+          "
+        >
+          {Items.map((item) => (
+            <CardList
+              key={item.id}
+              icon={item.icon}
+              name={item.name}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

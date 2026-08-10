@@ -9,77 +9,190 @@ const Header = () => {
   };
 
   const navItems = [
-    { id: 1, text: "ABOUT_ME", link: "#about" },
+    { id: 1, text: "ABOUT ME", link: "#about" },
     { id: 2, text: "EDUCATION", link: "#education" },
     { id: 3, text: "SKILLS", link: "#skills" },
     { id: 4, text: "PROJECTS", link: "#projects" },
-    { id: 5, text: "WORK_EXPERIENCE", link: "#internship" },
-    { id: 6, text: "CONTACT_ME", link: "#contact" },
+    { id: 5, text: "WORK EXPERIENCE", link: "#internship" },
+    { id: 6, text: "CONTACT ME", link: "#contact" },
   ];
 
   return (
-    <header className="shadow sticky z-50 top-0 px-4 bg-white md:px-4 w-full">
-      <nav className="flex flex-wrap justify-between items-center h-[70px] lg:px-10">
+    <header className="sticky top-0 z-50 w-full bg-[#050B24]/95 backdrop-blur-md border-b border-purple-500/20 shadow-lg">
+      
+      <nav className="flex items-center justify-between h-[75px] px-5 lg:px-12">
+
+        {/* Logo */}
         <div>
           <Link to="/">
-            <img src="./logo/logo.png" alt="Logo" className="h-10 md:h-12" />
+            <img
+              src="./logo/logo.png"
+              alt="Arjun Logo"
+              className="h-10 md:h-12"
+            />
           </Link>
         </div>
-        <ul className="hidden md:flex md:flex-wrap text-[12px] md:text-[14px] lg:text-lg">
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex items-center gap-5 lg:gap-8 text-sm lg:text-base">
           {navItems.map((item) => (
             <li key={item.id}>
               <a
                 href={item.link}
-                className="py-2 pr-4 pl-3 duration-200 font-bold cursor-pointer text-orange-600"
+                className="
+                  relative
+                  py-2
+                  font-semibold
+                  text-gray-200
+                  hover:text-[#D946EF]
+                  transition-all
+                  duration-300
+                  after:absolute
+                  after:left-0
+                  after:bottom-0
+                  after:h-[2px]
+                  after:w-0
+                  after:bg-gradient-to-r
+                  after:from-[#7C3AED]
+                  after:to-[#EC4899]
+                  hover:after:w-full
+                  after:transition-all
+                  after:duration-300
+                "
               >
                 {item.text}
               </a>
             </li>
           ))}
         </ul>
-        <div className="hidden lg:block">
-          <Link
-            to="https://github.com/ARJU7500"
+
+        {/* Social Buttons */}
+        <div className="hidden lg:flex items-center gap-3">
+
+          <a
+            href="https://github.com/ARJU7500"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-orange-600 border-solid border-2 border-orange-600 hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+            className="
+              px-5 py-2.5
+              rounded-lg
+              border border-purple-400
+              text-white
+              font-medium
+              hover:bg-purple-600
+              transition-all
+              duration-300
+            "
           >
             Github
-          </Link>
-          <Link
-            to="https://www.linkedin.com/in/arjunegi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BysJqComQTvWxniErp%2FeC1w%3D%3D"
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/arjunegi/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white bg-orange-600 hover:bg-white hover:text-orange-600 hover: border-solid border-2 border-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+            className="
+              px-5 py-2.5
+              rounded-lg
+              text-white
+              font-medium
+              bg-gradient-to-r
+              from-[#7C3AED]
+              to-[#EC4899]
+              hover:from-[#6D28D9]
+              hover:to-[#DB2777]
+              transition-all
+              duration-300
+              shadow-lg
+              shadow-purple-500/20
+            "
           >
             Linkedin
-          </Link>
+          </a>
+
         </div>
+
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="border-0">
-            <h1 className="text-4xl text-orange-600" id="icon">
-              &#8801;
-            </h1>
+          <button
+            onClick={toggleMenu}
+            className="text-3xl text-purple-400 focus:outline-none"
+          >
+            {isMenuOpen ? "✕" : "☰"}
           </button>
         </div>
+
       </nav>
-      <div id="responsive" className={isMenuOpen ? "block" : "hidden"}>
-        <ul className="bg-orange-600 h-[670px] py-2 text-center">
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
+          isMenuOpen ? "max-h-[600px]" : "max-h-0"
+        }`}
+      >
+        <div className="bg-[#080F2A] border-t border-purple-500/20">
+
           {navItems.map((item) => (
-            <>
-              <button key={item.id} onClick={toggleMenu} className="border-0 ">
-                <a
-                  href={item.link}
-                  className=" p-3 font-bold cursor-pointer text-white flex flex-col"
-                >
-                  {item.text}
-                </a>
-              </button>
-              <hr className="h-0.5 bg-white" />
-            </>
+            <a
+              key={item.id}
+              href={item.link}
+              onClick={() => setIsMenuOpen(false)}
+              className="
+                block
+                py-4
+                text-center
+                font-semibold
+                text-gray-200
+                border-b
+                border-purple-500/10
+                hover:text-purple-400
+                hover:bg-purple-500/10
+                transition-all
+              "
+            >
+              {item.text}
+            </a>
           ))}
-        </ul>
+
+          {/* Mobile Social Buttons */}
+          <div className="flex justify-center gap-3 py-5">
+
+            <a
+              href="https://github.com/ARJU7500"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                px-5 py-2
+                border
+                border-purple-400
+                rounded-lg
+                text-white
+              "
+            >
+              Github
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/arjunegi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                px-5 py-2
+                rounded-lg
+                text-white
+                bg-gradient-to-r
+                from-purple-600
+                to-pink-500
+              "
+            >
+              Linkedin
+            </a>
+
+          </div>
+
+        </div>
       </div>
+
     </header>
   );
 };
