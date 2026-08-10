@@ -15,18 +15,18 @@ function About() {
           I'm Arjun Negi
         </h1>
         <h2 className="text-orange-600  text-[25px] font-bold pt-2 md:text-5xl">
-          I'm a Software Developer
+         Software Engineer
         </h2>
         <p className="text-orange-600 text-[13px] md:text-[15px] pt-2 w-[100%] md:text-xl md:pt-4 md:px-3 md:leading-8 lg:px-0 lg:mt-4">
           Hello, Welcome to my profile!
           </p>
           <p className="text-orange-600 text-[13px] md:text-[15px] mb-2 w-[100%] md:text-xl md:px-3 md:leading-8 lg:px-0">
            I’m from Uttarakhand and have completed all my education there.
-          Currently, I live in New Delhi. I’ve been working as a software developer for the past 1.5+ years at Team Elogisol Pvt. Ltd..
+          Currently, I live in New Delhi. I’ve been working as a software Engineer for the past 1.6 years.
           My specialization is in backend development and database management.
           Apart from my professional work, I enjoy traveling—either solo or with friends. I love learning new things and
           always try to do or explore something different. I also enjoy sharing my knowledge and experiences with others.
-          "Currently i am Looking For Change and new opportunities in the field of software development/Engineer, Dot Net Developer and i am open to work."
+          "Currently i am Looking For Change and new opportunities in the field of software development/Engineer, Dot Net Profile and i am open to work."
         </p>
         <Link
           to="https://drive.google.com/drive/folders/17y2Pa-Tb5ce8leIYUVOt1RPvppjTt0lU?usp=sharing"
