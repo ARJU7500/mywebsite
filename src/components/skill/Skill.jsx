@@ -15,6 +15,7 @@ function Skill() {
   const databaseSkills = [
     "SQL Server",
     "Oracle",
+    "PostgreSQL",
     "Stored Procedures",
     "SQL Queries",
     "Database Management",
@@ -28,6 +29,7 @@ function Skill() {
     "Bootstrap",
     "Tailwind CSS",
     "Angular",
+    "Blazor"
   ];
 
   const toolsSkills = [
@@ -36,6 +38,8 @@ function Skill() {
     "Visual Studio",
     "VS Code",
     "Postman",
+    "Docker",
+    "Swagger"
   ];
 
   return (

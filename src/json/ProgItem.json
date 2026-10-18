@@ -8,5 +8,10 @@
         "id": "2",
         "icon": "./icon/oracle.png",
         "name": "Oracle"
+    },
+    {
+        "id": "3",
+        "icon": "./icon/oracle.png",
+        "name": "Postgres SQL"
     }
 ]
