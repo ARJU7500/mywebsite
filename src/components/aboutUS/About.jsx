@@ -172,7 +172,7 @@ function About() {
           >
             I'm from Uttarakhand and have completed all my education there.
             Currently, I live in New Delhi. I've been working as a Software
-            Engineer for the past 1.6 years. My specialization is in backend
+            Engineer for the past 1+ years. My specialization is in backend
             development and database management.
 
             <br />
@@ -181,11 +181,6 @@ function About() {
             with friends. I love learning new things and always try to explore
             something different. I also enjoy sharing my knowledge and
             experiences with others.
-
-            <br />
-
-            Currently, I am looking for new opportunities in the field of
-            Software Development / .NET and I am open to new challenges.
           </p>
 
           {/* Resume Button */}
