@@ -172,7 +172,7 @@ function About() {
           >
             I'm from Uttarakhand and have completed all my education there.
             Currently, I live in New Delhi. I've been working as a Software
-            Engineer for the past 1+ years. My specialization is in backend
+            Engineer for the past 1.5+ years. My specialization is in backend
             development and database management.
 
             <br />
