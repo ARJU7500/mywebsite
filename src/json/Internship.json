@@ -18,5 +18,15 @@
         "title": "Software Engineer",
         "description": "Team Elogisol Private Limited is a professionally managed IT product and IT enabled services Provider Company focused on the Logistics domain. I Joined as a Software Engineer.",
         "skills": "Dot Net Frameworks (ASp.net,ADO.net,VB.net), Core, MVC, Oracle and SQL."
+    },
+    {
+      "Id": 3,
+        "image": "./job/ecoex.png",
+        "name": "Ecoex Private Limited",
+        "work": "Software Development",
+        "date": "21 Sept 2026 - Present",
+        "title": "Software Developer",
+        "description": "EcoEx is a technology-driven environmental services company that promotes sustainable waste management through digital platforms, recycling, and waste commodity trading. The company connects waste generators, producers, buyers, and certified recyclers to enable transparent waste transactions and responsible disposal. Its services include Extended Producer Responsibility (EPR), industrial waste management, e-waste recycling, and sustainability consulting, supporting a circular economy and a greener future. I Joined as a Software Developer.",
+        "skills": "Blazor, EF Core, MVC, Postgres Sql and SQL server, Git, Docker."
     }
 ]
